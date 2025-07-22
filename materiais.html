@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Título da Subpágina | Dimensão Arcana</title>
+
+  <!-- Estilos principais -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Estilos do menu de navegação -->
+  <link rel="stylesheet" href="nav.css" />
+  <!-- Ícones Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Botão Hamburger -->
+  <button id="toggleNav" aria-label="Abrir menu de navegação" aria-expanded="false">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Menu lateral -->
+  <nav id="sideNav" class="collapsed">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i><span>Início</span></a></li>
+      <li><a href="criacaoPersonagem.html"><i class="fas fa-user-plus"></i><span>Criação de Personagens</span></a></li>
+      <li><a href="materiais.html"><i class="fas fa-scroll"></i><span>Material</span></a></li>
+      <li><a href="campanhas.html"><i class="fas fa-dragon"></i><span>Campanhas</span></a></li>
+      <li><a href="#"><i class="fas fa-newspaper"></i><span>Informativos</span></a></li>
+      <li><a href="#"><i class="fas fa-book"></i><span>Registros</span></a></li>
+      <li><a href="#"><i class="fas fa-gem"></i><span>Pérolas</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main id="mainContent">
+    <h1 class="page-title">Dimensão Arcana</h1>
+
+    <section class="card">
+      <h2>Manuais e Complementos</h2>
+      <p>Aqui você encontrará material para o seu RPG.</p>
+    </section>
+
+    <section class="card">
+      <h2>Manual Alpha (versão antiga)</h2><br>
+      <div style="text-align: center;">
+      <img src="assets/malpha2.jpeg" style="width: 50%;" alt="Descrição da imagem"></div><br>
+      <p><a href="manuais/3dt-manual-revisado-ampliado-e-turbinado-biblioteca-elfica.pdf" target="_blank" style="padding: 10px 15px; background-color: #0055aa; color: white; text-decoration: none; border-radius: 5px;">📄 Ver PDF no navegador</a></p><br>
+    </section>
+    <section class="card">
+      <h2>Manual Alpha (versão atualizada)</h2><br>
+      <div style="text-align: center;">
+      <img src="assets/malpha1.jpeg" style="width: 60%;" alt="Descrição da imagem"></div><br>
+      <p><a href="manuais/Manual 3D&T Alpha.pdf" target="_blank" style="padding: 10px 15px; background-color: #0055aa; color: white; text-decoration: none; border-radius: 5px;">📄 Ver PDF no navegador</a></p><br>
+    </section>
+  </main>
+
+  <!-- Script do menu -->
+  <script src="nav.js"></script>
+</body>
+</html>

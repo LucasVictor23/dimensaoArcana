@@ -1,0 +1,71 @@
+/* Menu lateral */
+#sideNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #1e1e2f;
+  color: white;
+  overflow-x: hidden;
+  transition: width 0.3s ease;
+  z-index: 1000;
+  padding-top: 60px;
+  width: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+/* Quando expandido */
+#sideNav.expanded {
+  width: 260px;
+  visibility: visible;
+  overflow-y: auto;
+}
+
+/* Lista de navegação */
+#sideNav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sideNav li {
+  margin: 10px 0;
+}
+
+#sideNav a {
+  display: flex;
+  align-items: center;
+  color: #c084fc;
+  text-decoration: none;
+  padding: 12px 20px;
+  transition: background-color 0.2s;
+}
+
+#sideNav a:hover {
+  background-color: #2a2a3d;
+}
+
+#sideNav i {
+  font-size: 18px;
+  width: 24px;
+  margin-right: 12px;
+}
+
+/* Botão toggle (hamburger) */
+#toggleNav {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1100;
+  background-color: #1e1e2f;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+#toggleNav:hover {
+  background-color: #2a2a3d;
+}

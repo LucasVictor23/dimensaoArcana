@@ -1,0 +1,97 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  color: #c084fc;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Conteúdo principal */
+main#mainContent {
+  margin-left: 0;
+  padding: 60px 10px 20px 10px; /* Espaço no topo e bordas laterais mínimas */
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+nav.expanded + main#mainContent {
+  margin-left: 260px; /* Mesma largura do menu expandido */
+}
+
+main section {
+  background: #111;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(162, 89, 255, 0.15);
+}
+
+.page-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+  margin: 0 auto 20px;
+  padding: 60px 20px;
+  background-image: url('assets/90f34ef6154fe5594ca08a442daffcae.jpg');
+  background-size: 40%;
+  background-position: center -10px; /* move a imagem 1px para cima */
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-shadow:
+    2px 2px 4px red,
+    -2px -2px 4px gold,
+    1px 1px 6px black;
+}
+
+main section h2 {
+  margin-bottom: 10px;
+  color: #a259ff;
+}
+
+/* Cores de texto opcionais */
+.text-white { color: #fff; }
+.text-yellow { color: #f1c40f; }
+.text-green { color: #2ecc71; }
+.text-red { color: #e74c3c; }
+.text-muted { color: #aaa; }
+
+h3 a {
+  text-decoration: none;   /* tira o sublinhado */
+  color: #c084fc;          /* mesma cor do corpo */
+  cursor: pointer;         /* deixa o cursor de link */
+  transition: color 0.3s ease; /* efeito suave ao passar o mouse */
+}
+
+h3  a:hover {
+  color: #f1c40f;          /* amarelo ao passar o mouse */
+  text-decoration: underline; /* opcional: sublinhado no hover */
+}
+
+/* Responsivo */
+@media (min-width: 769px) {
+    main#mainContent {
+        padding: 60px 40px 20px 40px;
+    }
+}
+
+  main section {
+    padding: 15px;
+  }
+}
+
+.card {
+  width: 100%;
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
